@@ -1,0 +1,6 @@
+*Session.vim
+*.dll
+*.o
+*.exe
+*a.out
+*.sconsign.dblite
