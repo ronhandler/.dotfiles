@@ -114,3 +114,4 @@ fi
 export TERM=xterm-256color
 export PATH=/sbin:$PATH
 
+shopt -s dotglob
