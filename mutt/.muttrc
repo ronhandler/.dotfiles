@@ -1,0 +1,24 @@
+set imap_user="ronhandler@gmail.com"
+set my_pw = `gpg -d gmail.gpg`
+set my_msmtp_pass=$my_pw
+set imap_pass=$my_pw
+
+set sendmail="/usr/bin/msmtp"
+set from="ronhandler@gmail.com"
+set realname="Ron"
+set use_from="yes"
+
+set folder="imaps://imap.gmail.com:993"
+set ssl_force_tls="yes"
+set spoolfile="+INBOX"
+set postponed="+[Gmail]/Drafts"
+set record="/dev/null"
+
+set imap_check_subscribed
+set timeout="90"
+set imap_keepalive="300"
+set mail_check="150"
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
