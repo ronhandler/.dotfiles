@@ -118,7 +118,7 @@ mouse_scroll_down = iconify
 #---------------------------------------------
 # AUTOHIDE OPTIONS
 #---------------------------------------------
-#panel_layer = top
+panel_layer = top
 #autohide = 1
 #autohide_show_timeout = 0.3
 #autohide_hide_timeout = 2 

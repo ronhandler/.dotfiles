@@ -12,8 +12,9 @@ URxvt*font:				xft:terminus:pixelsize=18
 URxvt*scrollBar:		false
 URxvt*scrollBar_right:	true
 URxvt*intensityStyles:	false
-!Urxvt*iconFile:			/home/user/Pictures/Terminal-icon.png
-Urxvt*iconFile:			/usr/share/icons/Numix-Circle/48x48/apps/terminal.svg
+Urxvt*iconFile:			/usr/share/icons/terminal.png
+!Urxvt*iconFile:			/usr/share/icons/Numix-Circle/48x48/apps/terminal.png
+
 
 ! Solarized color scheme for the X Window System
 !
@@ -34,6 +35,7 @@ Urxvt*iconFile:			/usr/share/icons/Numix-Circle/48x48/apps/terminal.svg
 
 ! Dark
 
+!#define S_base03        #000000
 #define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75

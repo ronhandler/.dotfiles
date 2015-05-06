@@ -285,4 +285,5 @@ statusbar = {
 settings = {
   core = { real_name = "user"; user_name = "user"; nick = "ronhandler"; };
   "fe-text" = { actlist_sort = "refnum"; };
+  "fe-common/core" = { theme = "xchat"; };
 };

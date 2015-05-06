@@ -11,6 +11,11 @@
 				<execute>x-www-browser</execute>
 			</action>
 		</item>
+		<item label="File manager">
+			<action name="Execute">
+				<execute>pcmanfm</execute>
+			</action>
+		</item>
 		<menu
 			id="openbox-menu1"
 			label="Menu"
