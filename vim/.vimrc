@@ -12,7 +12,7 @@ set go=
 "colo oceanblack256
 let g:solarized_termtrans=1
 set background=dark
-colo solarized
+"colo solarized
 " Choose a font.
 "set guifont=Bitstream_Vera_Sans_Mono:h12:cANSI
 " Session.vim settings.
@@ -68,7 +68,7 @@ set statusline=\ %f%m%r%h%w\ %=%({%{&ff}\|%{(&fenc==\"\"?&enc:&fenc).((exists(\"
 "set t_Co=256
 
 " Enable highlighting the selected line.
-set cursorline
+"set cursorline
 
 " Set make-program to scons.
 set makeprg=scons
