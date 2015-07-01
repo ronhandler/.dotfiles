@@ -8,7 +8,7 @@
 !URxvt*foreground:		#ffffff
 !URxvt*background:		[95]#000000
 URxvt*depth:			32
-URxvt*font:				xft:terminus:pixelsize=18
+URxvt*font:				xft:terminus:pixelsize=17
 !URxvt.font:				xft:DejaVu Sans Mono:pixelsize=14
 URxvt*scrollBar:		false
 URxvt*scrollBar_right:	true

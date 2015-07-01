@@ -1,10 +1,11 @@
 #!/bin/bash
 
-(sleep 0.2 && /etc/set_wallpaper) &
 (sleep 0.2 && compton --config ~/.config/compton.conf) &
-(sleep 0.2 && tint2 && volumeicon) &
-(sleep 0.2 && xfce4-clipman) &
-(sleep 0.2 && volumeicon) &
-(sleep 0.2 && pytyle) &
 (sleep 0.2 && /usr/bin/setxkbmap -option 'ctrl:nocaps') &
 (sleep 0.2 && xset r rate 220 35) &
+(sleep 0.2 && pcmanfm --desktop) &
+(sleep 0.2 && VBoxClient-all) &
+(sleep 0.2 && pytyle) &
+(sleep 1 && plank) &
+(sleep 0.2 && xfce4-clipman) &
+(sleep 0.2 && volumeicon) &
