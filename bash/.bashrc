@@ -57,8 +57,13 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-	PS1="\[\033[01;37m\]$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\][ \u ]'; else echo '\[\033[01;36m\]\u@\h'; fi)\[\033[01;34m\] \w \$\[\033[00m\] "
+	#PS1="\[\033[01;37m\]$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\][ \u ]'; else echo '\[\033[01;36m\]\u@\h'; fi)\[\033[01;34m\] \w \$\[\033[00m\] "
     #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+	green=$(tput setaf 2)
+	blue=$(tput setaf 4)
+	bold=$(tput bold)
+	reset=$(tput sgr0)
+	PS1='\[$green$bold\]\u@\h\[$reset\] \[$blue$bold\]\w\[$reset\] \$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -115,3 +120,5 @@ export TERM=xterm-256color
 export PATH=/sbin:$PATH
 
 shopt -s dotglob
+shopt -s checkwinsize
+bind "set completion-ignore-case on" 
