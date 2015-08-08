@@ -2,6 +2,7 @@
 
 (sleep 0.2 && compton --config ~/.config/compton.conf) &
 (sleep 0.2 && /usr/bin/setxkbmap -option 'ctrl:nocaps') &
+(sleep 0.1 && setxkbmap -model pc104 -layout us,il -option grp:alt_shift_toggle) &
 (sleep 0.2 && xset r rate 220 35) &
 (sleep 0.2 && pcmanfm --desktop) &
 (sleep 0.2 && VBoxClient-all) &

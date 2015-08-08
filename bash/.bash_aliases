@@ -11,11 +11,11 @@ alias spaceroff='PROMPT_COMMAND=""'
 postman () {
    if [ "$3" ]
    then
-	   curl $1 -X $2 -d "$3" 2>/dev/null | jq .
+	   curl  -H "Content-Type: application/json" $1 -X $2 -d "$3" 2>/dev/null | jq .
    else
 	   if [ $2 ]
 	   then
-	       curl $1 -X $2 2>/dev/null | jq .
+	       curl -H "Content-Type: application/json" $1 -X $2 2>/dev/null | jq .
 	   else
 		   if [ $1 ]
 		   then
