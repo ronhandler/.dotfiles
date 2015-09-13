@@ -1,1 +1,0 @@
-../emmet-vim/plugin/emmet.vim

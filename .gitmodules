@@ -1,5 +1,5 @@
 [submodule "vim/.vim/emmet-vim"]
-	path = vim/.vim/emmet-vim
+	path = vim/.vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim
 [submodule "vim/.vim/bundle/vim-jade"]
 	path = vim/.vim/bundle/vim-jade
