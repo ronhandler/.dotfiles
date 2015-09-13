@@ -33,7 +33,7 @@ set smartindent
 set cindent
 " Set tab width to 4 characters.
 set tabstop=4
-set noexpandtab
+set expandtab
 set shiftwidth=4
 " Enable automatic line break at the 76th character.
 set textwidth=76
