@@ -8,5 +8,6 @@
 (sleep 0.2 && VBoxClient-all) &
 (sleep 0.2 && pytyle) &
 (sleep 1 && plank) &
-(sleep 0.2 && xfce4-clipman) &
 (sleep 0.2 && volumeicon) &
+(sleep 0.2 && autocutsel -fork) &
+(sleep 0.2 && autocutsel -selection PRIMARY -fork) &

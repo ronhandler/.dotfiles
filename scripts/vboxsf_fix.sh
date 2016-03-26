@@ -3,7 +3,7 @@
 vboxsfPath='/usr/lib/systemd/system/vboxservice.service'
 pattern='ConditionVirtualization=oracle'
 sedLine='/'$pattern'/,${s///;b};$q1'
-echo "Removing line \"$pattern\" setting from $vboxsfPath"
+echo "Removing \"$pattern\" setting from $vboxsfPath"
 sudo sed -i.bak $sedLine $vboxsfPath
 if [ $? -eq 0 ]; then
 	sudo systemctl daemon-reload
